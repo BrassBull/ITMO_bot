@@ -1,4 +1,4 @@
-theme: main
+theme: /main
 
 state: /hello
     q!: /(привет|здравствуй|hello|hi|добрый день|добрый вечер)/i
