@@ -1,10 +1,10 @@
-theme: /
+theme: main
 
 state: /hello
     q!: /(привет|здравствуй|hello|hi|добрый день|добрый вечер)/i
     a: Привет! Я бот-помощник. Могу рассказать о погоде и курсах валют. Напишите "погода" или "курс валют".
 
-    go!: /weather || /currency || /NoMatch
+    go!: /weather || /currency || /NoMatchпогода
 
 
 state: /weather
