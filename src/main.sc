@@ -1,34 +1,18 @@
 theme: /
 
-state: /Start {
-    intent: hello -> hello
-    intent: weather -> weather
-    intent: currency -> currency
-    event!: noMatch -> NoMatch
-}
+state: /hello
+    intent!: Hello
+    a: Hello! I'm your assistant bot. I can help you with weather forecasts and exchange rates. What would you like to know?
 
-# Приветствие
-state:/hello {
-    a: Привет! 👋 Я бот-помощник.
-    a: Могу рассказать о погоде 🌦️ и курсах валют 💱
-    a: Просто спроси!
-}
+state: /weather
+    intent!: WeatherForecast
+    a: Here's the weather forecast for your area. It looks like partly cloudy skies with a high of 18°C today. Would you like a more specific forecast?
 
-# Погода
-state: /weather {
-    a: Сейчас я не подключен к реальному API погоды 😅
-    a: Но обычно можно сказать: "Погода сегодня солнечная ☀️"
-}
+state: /currency
+    intent!: ExchangeRate
+    a: Here are today's exchange rates. 1 EUR equals 1.09 USD and 0.86 GBP. Which currency pair are you interested in?
 
-# Валюта
-state: /currency {
-    a: Курсы валют на сегодня 💱:
-    a: 💵 USD ≈ 90 RUB
-    a: 💶 EUR ≈ 98 RUB
-}
-
-# Если ничего не подошло
-state: /NoMatch {
-    a: 🤔 Я не совсем понял запрос.
-    a: Попробуй спросить про погоду или курс валют.
+state: /NoMatch
+    event!: noMatch
+    a: I'm sorry, I didn't understand that. I can help you with weather forecasts or exchange rates. Please try asking about one of those.
 }
