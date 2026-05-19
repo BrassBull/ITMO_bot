@@ -1,21 +1,35 @@
-theme: /
-    
+require: slotfilling/slotFilling.sc
+    module = sys.zb-common
 
-    state: /hello
-        q!: /(привет|здравствуй|hello|hi|добрый день|добрый вечер)/i
-        a: Привет! Я бот-помощник. Могу рассказать о погоде и курсах валют. Напишите "погода" или "курс валют".
+theme: /
+
+    state: Start
+        q!: /hello
+        q!: /weather
+        q!: /currency
+        q!: /NoMatch
+
+
+    state: hello
+        intent!: /hello
+        a: Привет! 👋 Я бот-помощник.
+        a: Могу рассказать о погоде 🌦️ и курсах валют 💱
     
     
-    state: /weather
-        q!: /(погода|какая погода|что с погодой|прогноз|прогноз погоды|weather)/i
-        a: Сейчас хорошая погода. Температура около +20°C.
+    state: weather
+        intent!: /weather
+        a: Сейчас я не подключен к API погоды 😅
+        a: Но обычно погода сегодня хорошая ☀️
     
     
-    state: /currency
-        q!: /(курс валют|доллар|евро|валюта|курс доллара|курс евро|currency)/i
-        a: Текущий курс: USD ≈ 90 RUB, EUR ≈ 98 RUB.
+    state: currency
+        intent!: /currency
+        a: Курсы валют 💱:
+        a: USD ≈ 90 RUB
+        a: EUR ≈ 98 RUB
     
     
-    state: /NoMatch
-        q!: /.*/
-        a: Извините, я не понял запрос. Попробуйте спросить о погоде или курсе валют.       
+    state: NoMatch
+        event!: /NoMatch
+        a: 🤔 Я не понял запрос.
+        a: Попробуй спросить про погоду или валюту.
