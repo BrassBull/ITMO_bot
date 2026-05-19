@@ -1,4 +1,9 @@
 theme: /
+    state: /Start
+        q!: /hello
+        q!: /weather
+        q!: /currency
+        q!: /NoMatch
 
     state: /hello
         intent!: hello
