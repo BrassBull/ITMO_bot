@@ -1,10 +1,10 @@
 theme: /
 
 state: Start
-    q!: /hello
-    q!: /weather
-    q!: /currency
-    q!: /NoMatch
+    intent: hello -> hello
+    intent: weather -> weather
+    intent: currency -> currency
+    event!: noMatch -> NoMatch
 
 
 # Приветствие
@@ -16,14 +16,12 @@ state: hello
 
 # Погода
 state: weather
-    intent: weather
     a: Сейчас я не подключен к реальному API погоды 😅
     a: Но обычно можно сказать: "Погода сегодня солнечная ☀️"
 
 
 # Валюта
 state: currency
-    intent: currency
     a: Курсы валют на сегодня 💱:
     a: 💵 USD ≈ 90 RUB
     a: 💶 EUR ≈ 98 RUB
