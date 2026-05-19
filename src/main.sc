@@ -1,6 +1,6 @@
 theme: /
 
-state: Start {
+state: /Start {
     intent: hello -> hello
     intent: weather -> weather
     intent: currency -> currency
