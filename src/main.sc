@@ -3,12 +3,12 @@ require: slotfilling/slotFilling.sc
 
 theme: /
 
-    fallback: /NoMatch
 
     state: Start
         intent: hello -> /hello
         intent: weather -> /weather
         intent: currency -> /currency
+        event!: NoMatch -> /NoMatch
 
 
 
