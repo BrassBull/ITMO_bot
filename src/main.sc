@@ -3,7 +3,7 @@ require: slotfilling/slotFilling.sc
 
 theme: /
 
-    fallback: NoMatch
+    fallback: /NoMatch
 
     state: Start
         intent: hello -> /hello
