@@ -25,6 +25,6 @@ theme: /
     
     
     state: NoMatch
-        event!: NoMatch
+        event!: noMatch
         a: 🤔 Я не понял запрос.
         a: Попробуй спросить про погоду или валюту.
