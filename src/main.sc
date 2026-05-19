@@ -15,4 +15,3 @@ state: /currency
 state: /NoMatch
     event!: noMatch
     a: I'm sorry, I didn't understand that. I can help you with weather forecasts or exchange rates. Please try asking about one of those.
-}
