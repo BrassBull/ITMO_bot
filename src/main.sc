@@ -4,34 +4,27 @@ require: slotfilling/slotFilling.sc
 theme: /
 
 
-    state: Start
-        intent: hello -> /hello
-        intent: weather -> /weather
-        intent: currency -> /currency
-        event!: NoMatch -> /NoMatch
-
-
 
     state: hello
-        intent!: /hello
+        intent!: hello
         a: Привет! 👋 Я бот-помощник.
         a: Могу рассказать о погоде 🌦️ и курсах валют 💱
     
     
     state: weather
-        intent!: /weather
+        intent!: weather
         a: Сейчас я не подключен к API погоды 😅
         a: Но обычно погода сегодня хорошая ☀️
     
     
     state: currency
-        intent!: /currency
+        intent!: currency
         a: Курсы валют 💱:
         a: USD ≈ 90 RUB
         a: EUR ≈ 98 RUB
     
     
     state: NoMatch
-        event!: /NoMatch
+        event!: NoMatch
         a: 🤔 Я не понял запрос.
         a: Попробуй спросить про погоду или валюту.
