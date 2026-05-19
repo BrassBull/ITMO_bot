@@ -4,7 +4,7 @@ require: slotfilling/slotFilling.sc
 theme: /
 
     state: Start
-        q!: $Regex</start>
+        q!: $regex</start>
         a: Начнем
 
 
