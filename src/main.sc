@@ -3,9 +3,13 @@ require: slotfilling/slotFilling.sc
 
 theme: /
 
+    fallback: NoMatch
+
     state: Start
-        q!: $regex</start>
-        a: Начнем
+        intent: hello -> /hello
+        intent: weather -> /weather
+        intent: currency -> /currency
+
 
 
     state: hello
