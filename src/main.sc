@@ -1,4 +1,4 @@
-theme: /
+theme: /main
 {
     state: /hello
     {
