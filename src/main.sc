@@ -25,6 +25,6 @@ theme: /
         a: EUR ≈ 98 RUB
     
     
-    state: NoMatch
+    state: /NoMatch
         event!: noMatch
         a: 🤔 Я не понял запрос.
